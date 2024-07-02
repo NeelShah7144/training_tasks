@@ -6,7 +6,8 @@ export default function FormMain() {
   const nameRef = useRef(null);
   const [storeValue, setStoreValue] = useState([]);
   const [id, setId] = useState(0);
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitted,
+     setIsSubmitted] = useState(false);
   //const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -43,7 +44,7 @@ export default function FormMain() {
           <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div className="mb-3">
-          <label htmlFor="name" className="form-label">Name</label>
+          <label htmlFor="name" className="form-labe    l">Name</label>
           <input
             type="text"
             className="form-control bg-dark text-light"
