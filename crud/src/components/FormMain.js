@@ -7,18 +7,18 @@ export default function FormMain() {
   const [storeValue, setStoreValue] = useState([]);
   const [id, setId] = useState(0);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const email = emailRef.current.vdalue;
+    const email = emailRef.current.value;
     const name = nameRef.current.value;
     setStoreValue([...storeValue, { id: id, email: email, name: name }]);
     setId(id + 1);
     emailRef.current.value = "";
     nameRef.current.value = "";
     setIsSubmitted(true);
-    navigate("/HomePage"); 
+    //navigate("/HomePage"); 
   };
 
   useEffect(() => {
