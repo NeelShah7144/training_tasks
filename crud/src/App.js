@@ -5,10 +5,12 @@ import FormMain from "./components/FormMain";
 import HomePage from "./components/HomePage";
 import withNavbar from "./components/withNavbar";
 import ApiExample from "./components/ApiExample";
+import Crud from "./components/Crud";
 
 const HomePageWithNavbar = withNavbar(HomePage);  
 const FormMainWithNavbar = withNavbar(FormMain);
 const APiExampleWithNavbar = withNavbar(ApiExample);
+const CrudWithNavbar = withNavbar(Crud);
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Route path="/HomePage" element={<HomePageWithNavbar />} />
         <Route path="/FormMain" element={<FormMainWithNavbar />} />
         <Route path="/ApiExample" element={<APiExampleWithNavbar />} />
+        <Route path="/Crud" element={<CrudWithNavbar />}/>
       </Routes>
     </Router>
   );

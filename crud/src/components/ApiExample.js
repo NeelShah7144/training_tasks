@@ -8,7 +8,7 @@ export default function ApiExample() {
     const getDataWithApi = async () => {
         try {
             const ref = await axios.get("https://newsapi.org/v2/everything?q=tesla&from=2024-06-03&sortBy=publishedAt&apiKey=708799007e8b4751b1dbd6c5b1bd5a3b");
-            setMyData(ref.data.articles); // Use ref.data.articles instead of ref.data
+            setMyData(ref.data.articles); 
         } catch (error) {
             console.error("Error fetching data: ", error);
         }

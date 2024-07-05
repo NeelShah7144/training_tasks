@@ -42,6 +42,11 @@ export default function Navbar() {
                   Api
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/Crud">
+                  Crud
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
