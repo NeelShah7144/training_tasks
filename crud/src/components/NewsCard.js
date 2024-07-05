@@ -3,7 +3,7 @@ import React from 'react'
 export default function NewsCard(props) {
   return (
     <div>
-        <div className="card bg-secondary text-light" style={{width: "18rem"}}>
+        <div className="card bg-secondary text-light"   >
   <img src={props.imageUrl} className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title">{props.title}...</h5>

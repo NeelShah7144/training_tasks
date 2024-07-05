@@ -6,14 +6,13 @@ export default function ApiExample() {
     const [myData, setMyData] = useState([]);
 
     const getDataWithApi = async () => {
-        try {
+        try {   
             const ref = await axios.get("https://newsapi.org/v2/everything?q=tesla&from=2024-06-03&sortBy=publishedAt&apiKey=708799007e8b4751b1dbd6c5b1bd5a3b");
-            setMyData(ref.data.articles); 
-        } catch (error) {
+            setMyData(ref.data  .articles); 
+        } catch (error) {   
             console.error("Error fetching data: ", error);
         }
     }
-
     useEffect(() => {
         getDataWithApi();
     }, []);
@@ -27,7 +26,7 @@ export default function ApiExample() {
                         <NewsCard title={title} desc={description} mainUrl={url} imageUrl={urlToImage} />
                     </div>
                 );
-            }) : <h1>Loading...</h1>}
+            }) : <h1 sty>Loading...</h1>}
         </div>
     );
 }

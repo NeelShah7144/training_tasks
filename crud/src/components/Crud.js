@@ -10,7 +10,7 @@ export default function Crud() {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
   const [storeData, setStoreData] = useState([]);
-  
+
   const [editingId, setEditingId] = useState(null);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function Crud() {
   const formSubmitted = (e) => {
     e.preventDefault();
     const firstName = firstNameRef.current.value;
-    const lastName = lastNameRef.current.value;
+      const lastName = lastNameRef.current.value;
     const emailAddress = emailRef.current.value;
     const password = passwordRef.current.value;
 
